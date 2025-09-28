@@ -24,8 +24,16 @@ console.log("Total check-ins:", count);
 
 // Update Progress Bar
 const percentage = Math.round((count / maxCount) * 100) + "%";
+console.log(`Progress: ${percentage}`);
+
+// Team Counter
+const teamCounter = document.getElementByI(team + "Count");
 
 });
+
+
+
+
 
 
   
