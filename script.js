@@ -27,9 +27,17 @@ const percentage = Math.round((count / maxCount) * 100) + "%";
 console.log(`Progress: ${percentage}`);
 
 // Team Counter
-const teamCounter = document.getElementByI(team + "Count");
+const teamCounter = document.getElementById(team + "Count");
+teamCounter.textContent = parseInt(teamCounter.textContent) + 1;
+
+const message ='Welcome, ${name} from ${teamName}';
+
+console.log(message);
+
+form.reset(); // Reset the form fields
 
 });
+
 
 
 
