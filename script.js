@@ -30,7 +30,7 @@ console.log(`Progress: ${percentage}`);
 const teamCounter = document.getElementById(team + "Count");
 teamCounter.textContent = parseInt(teamCounter.textContent) + 1;
 
-const message ='Welcome, ${name} from ${teamName}';
+const message = `Welcome, ${name} from ${teamName}`;
 
 console.log(message);
 

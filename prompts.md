@@ -26,6 +26,18 @@ Clear all fields in the form so it's ready for the next attendee.
 
 Update the text inside a span to show the current attendee count.
 
+```javascript
+// Suppose you have a span with id="total-count"
+const totalCountSpan = document.getElementById("total-count");
+let attendeeCount = 0;
+
+// When someone checks in, increase the count and update the span
+function updateAttendeeCount() {
+  attendeeCount = attendeeCount + 1;
+  totalCountSpan.textContent = `${attendeeCount}`;
+}
+```
+
 ## Update the width of a progress bar using a percentage
 
 Change the width of a progress bar based on the calculated progress.
