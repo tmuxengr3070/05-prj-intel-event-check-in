@@ -38,6 +38,11 @@ form.addEventListener("submit", function (event) {
 
   const message = `Welcome, ${name} from ${teamName}`;
 
+  // Show greeting message in the container, centered and visible
+  const greeting = document.getElementById("greeting");
+  greeting.textContent = message;
+  greeting.style.display = "block";
+
   console.log(message);
 
   form.reset(); // Reset the form fields
