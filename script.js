@@ -33,7 +33,7 @@ form.addEventListener("submit", function (event) {
   progressBar.style.width = percentage;
 
   // Team Counter
-  const teamCounter = document.getElementById(team + "Count");
+  const teamCounter = document.getElementById(`${team}Count`);
   teamCounter.textContent = parseInt(teamCounter.textContent) + 1;
 
   const message = `Welcome, ${name} from ${teamName}`;
