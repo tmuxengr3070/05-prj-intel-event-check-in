@@ -43,6 +43,28 @@ form.addEventListener("submit", function (event) {
   greeting.textContent = message;
   greeting.style.display = "block";
 
+  // Show celebration message if goal is reached
+  if (count === maxCount) {
+    // Find the winning team
+    let maxTeam = "";
+    let maxTeamCount = 0;
+    const teams = [
+      { id: "waterCount", name: "Team Water Wise" },
+      { id: "zeroCount", name: "Team Net Zero" },
+      { id: "powerCount", name: "Team Renewables" }
+    ];
+    for (let i = 0; i < teams.length; i++) {
+      const teamValue = parseInt(document.getElementById(teams[i].id).textContent);
+      if (teamValue > maxTeamCount) {
+        maxTeamCount = teamValue;
+        maxTeam = teams[i].name;
+      }
+    }
+    const celebration = document.getElementById("celebration");
+    celebration.textContent = `🎉 Congratulations! ${maxTeam} has the most check-ins! 🎉`;
+    celebration.style.display = "block";
+  }
+
   console.log(message);
 
   form.reset(); // Reset the form fields

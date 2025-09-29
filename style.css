@@ -352,6 +352,43 @@ select {
   color: #475569;
 }
 
+/* Celebration message styles */
+.celebration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 28px 0 0 0;
+  min-height: 48px;
+}
+
+#celebration {
+  display: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #00c7fd, #00e676, #ffd600);
+  padding: 20px 36px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 113, 197, 0.13);
+  text-align: center;
+  letter-spacing: 1px;
+  animation: pop 0.7s;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  60% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {
