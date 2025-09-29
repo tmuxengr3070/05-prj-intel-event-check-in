@@ -22,6 +22,10 @@ console.log(name, teamName);
 count++;
 console.log("Total check-ins:", count);
 
+// Update attendee count on the page
+const attendeeCountSpan = document.getElementById("attendeeCount");
+attendeeCountSpan.textContent = count;
+
 // Update Progress Bar
 const percentage = Math.round((count / maxCount) * 100) + "%";
 console.log(`Progress: ${percentage}`);
@@ -44,6 +48,6 @@ form.reset(); // Reset the form fields
 
 
 
-  
-  
+
+
 
